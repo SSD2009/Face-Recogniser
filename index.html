@@ -1,0 +1,34 @@
+<html>
+    <head>
+       <title>Face Recogniser</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+ <body>
+     <center>
+     <button id="head">Face Recogniser</button>
+        <label>Your webcam : </label>
+        <div id="camera"></div>
+        <br>
+        <div id="result"></div>
+        <button id="photo" onclick="photo()">Capture photo</button>
+        <button id="identify" onclick="identify()">identify</button>
+        <br>
+        <br>
+        <label>Face: </label><label id="image"></label>
+        <br>
+        <label>accuracy: </label><label id="accuracy"></label>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
